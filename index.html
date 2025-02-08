@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sardauna Tech - IT Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 img {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #f4f4f4;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #007BFF;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 5, 0, 0.5);
+        }
+
+        .card h3 {
+            color: #007BFF;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .message-box {
+            margin: 2rem 0;
+        }
+
+        .message-box label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .message-box input, .message-box textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .message-box button {
+            padding: 0.8rem 2rem;
+            border: none;
+            background: #007BFF;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .message-box button:hover {
+            background: #0056b3;
+        }
+
+        .contact-links {
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="/logo.png" alt="Sardauna Tech Logo">
+
+            Sardauna Tech
+        </h1>
+        <nav>
+            <a href="#company-profile">Company Profile</a>
+            <a href="#ceo-profile">CEO's Profile</a>
+            <a href="#projects">Projects</a>
+            <a href="#partners">Partners</a>
+            <a href="#certifications">Certifications</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Sardauna Tech</h2>
+        <p>Specialized in Software Development, Consultancy, Project Management, and Partnerships.</p>
+    </section>
+
+    <section id="company-profile">
+        <h2>Company Profile</h2>
+        <p>At Sardauna Tech, we deliver cutting-edge IT solutions that help businesses achieve their goals efficiently. With expertise in software development, consultancy, and project management, we aim to transform ideas into reality.</p>
+    </section>
+
+    <section id="ceo-profile">
+        <h2>CEO's Profile</h2>
+        <div class="card">
+            <h3>Muhammad Auwal Abubakar</h3>
+            <p>Muhammad Auwal Abubakar is a visionary leader with over 5 years of experience in IT and project management. His mission is to empower businesses with innovative technology solutions.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Project A</h3>
+                <p>IT Manager For Binamarsub VTU
+                    ADMIN DASHBOARD MANAGEMENT </p>
+            </div>
+            <div class="card">
+                <h3>Project B</h3>
+                <p>Project Management And Specialisation at AMMAR & SONS NIG LTD.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners">
+        <h2>Our Business Partners</h2>
+        <p>We collaborate with global leaders in technology, including:</p>
+        <ul>
+            <li>Microsoft</li>
+            <li>Google</li>
+            <li>Amazon Web Services</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <p>Sardauna Tech is certified in:</p>
+        <ul>
+            <li>ISO 9001: Quality Management Systems</li>
+            <li>Certified ScrumMaster (CSM)</li>
+            <li>Microsoft Certified: Azure Solutions Architect Expert</li>
+        </ul>
+    </section>
+
+    <section class="message-box">
+        <h2>Assign a Contract</h2>
+        <form id="contract-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Describe your project or request" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sardauna Tech. All rights reserved.</p>
+        <div class="contact-links">
+            <a href="mailto:sardaunatech@gmail.com>Email Us</a> |
+            <a href="+2347019672820,+2349060276333">Call Us</a> |
+            <a href="https://www.linkedin.com/company/sardaunatech" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contract-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
